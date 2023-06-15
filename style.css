@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    background-color: #e8e8e8;
+    text-align: center;
+    line-height: 190%;
+    font-size: 1em;
+    color: #111;
+}
+
+ul {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+a:hover {
+    color: #888;
+}
+
+.header {
+    background-color: #111;
+}
+
+.header h1 {
+    margin: 0;
+    color: #eee;
+    font-size: 3em;
+    line-height: 180px;
+}
+
+.header h1 .normal {
+    font-weight: normal;
+}
+
+.wrap {
+    padding: 0 5%;
+}
+
+.module {
+    margin: 48px 0;
+}
+
+.module h2,
+.module h3 {
+    font-size: 1.2em;
+}
+
+.description {
+    margin: 2em 0;
+}
+
+.navigate {
+    margin: auto;
+    padding: 0;
+    width: 600px;
+    list-style-type: none;
+}
+
+.navigate li {
+    float: left;
+    width: 20%;
+    white-space: nowrap;
+}
+
+.navigate li a {
+    color: #111;
+    padding: 6px 12px;
+    border: #222 2px solid;
+    border-radius: 6px;
+}
+
+.blogs,
+.groups {
+    list-style-type: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blogs li,
+.groups li {
+    float: left;
+    width: 12.5%;
+    margin: 24px 0;
+}
+
+.blogs .blog-logo,
+.groups .group-logo {
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px #999;
+}
+
+.blogs .blog-name,
+.groups .group-name {
+    color: #111;
+}
+
+.blogs .blog-desc,
+.groups .group-desc {
+    font-size: 0.75em;
+    color: #999;
+}
+
+.groups li {
+    float: left;
+    width: 25%;
+}
+
+.groups .group-logo {
+    border-radius: 6px;
+}
+
+.posts .post {
+    text-align: left;
+    float: left;
+    width: 31.3%;
+    height: 420px;
+    box-sizing: border-box;
+    margin: 24px 1%;
+    padding: 12px 2%;
+    position: relative;
+    background-color: #f8f8f8;
+    box-shadow: 0 3px 4px #999;
+}
+
+.posts .post ul {
+    padding: 0 1em;
+}
+
+.ps .post {
+    width: 98%;
+    font-size: 0.875em;
+    height: fit-content;
+}
+
+.humiliations {
+    padding: 0 6%;
+}
+
+.humiliations li {
+    text-align: left;
+}
+
+.footer {
+    font-size: 0.75em;
+    color: #999;
+}
+
+/* 普屏模式 */
+
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 0.875em;
+    }
+}
+
+/* 小屏模式 */
+
+@media screen and (max-width: 1000px) {
+    .description {
+        text-align: left;
+    }
+
+    .blogs li {
+        width: 16.66%;
+    }
+
+    .groups li {
+        width: 33.33%;
+    }
+}
+
+/* 平板模式 */
+
+@media screen and (max-width: 780px) {
+    .navigate {
+        width: 100%;
+    }
+    
+    .blogs li {
+        width: 25%;
+    }
+
+    .groups li {
+        width: 50%;
+    }
+    
+    .posts .post {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-left: 6%;
+        padding-right: 6%;
+        height: fit-content;
+    }
+
+    .ps .post {
+        width: auto;
+    }
+
+    .humiliations {
+        padding-left: 24%;
+        padding-right: 24%;
+    }
+}
+
+/* 手机模式 */
+
+@media screen and (max-width: 460px) {
+    .navigate li {
+        width: 33.33%;
+        margin: 12px 0;
+    }
+    
+    .blogs li {
+        width: 33.33%;
+    }
+
+    .groups .group-logo {
+        width: 80%;
+    }
+
+    .posts .post {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: fit-content;
+    }
+
+    .humiliations {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
